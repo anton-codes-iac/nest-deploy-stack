@@ -17,12 +17,16 @@ The official **[deploy-stack](https://github.com/anton-codes-iac/deploy-stack)**
 
 ## 📦 Installation & Usage
 
-You do not need to install this package manually. You can run it directly against any existing NestJS application using the Nest CLI.
-
-In the root of your NestJS project, run:
+In the root of your existing NestJS project, install the schematic as a development dependency:
 
 ```bash
-npx @nestjs/cli generate nest-deploy-stack --collection nest-deploy-stack
+npm install -D nest-deploy-stack
+```
+
+Then, use the Nest CLI to execute the generator:
+
+```bash
+npx @nestjs/cli generate nestDeployStack --collection nest-deploy-stack
 ```
 
 You will be prompted for:

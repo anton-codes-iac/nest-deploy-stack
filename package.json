@@ -1,6 +1,6 @@
 {
   "name": "nest-deploy-stack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "files": [
     "src/**/*.js",
     "src/**/*.d.ts",
@@ -40,8 +40,8 @@
     "typescript": "~6.0.2"
   },
   "devDependencies": {
-    "@types/node": "^20.17.19",
     "@types/jasmine": "~6.0.0",
+    "@types/node": "^20.17.19",
     "jasmine": "^6.0.0"
   }
 }
