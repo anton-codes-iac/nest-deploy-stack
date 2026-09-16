@@ -26,7 +26,7 @@ npm install -D nest-deploy-stack
 Then, use the Nest CLI to execute the generator:
 
 ```bash
-npx @nestjs/cli generate nestDeployStack --collection nest-deploy-stack
+npx @nestjs/cli generate nest-deploy-stack --collection nest-deploy-stack
 ```
 
 You will be prompted for:
