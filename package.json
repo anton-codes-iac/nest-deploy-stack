@@ -1,6 +1,12 @@
 {
   "name": "nest-deploy-stack",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "files": [
+    "src/**/*.js",
+    "src/**/*.d.ts",
+    "src/**/*.json",
+    "README.md"
+  ],
   "description": "An Angular schematic that automatically scaffolds production-ready AWS ECS Fargate & RDS infrastructure for NestJS.",
   "scripts": {
     "build": "tsc -p tsconfig.json",
