@@ -1,15 +1,31 @@
 {
   "name": "nest-deploy-stack",
-  "version": "0.0.0",
-  "description": "A blank schematics",
+  "version": "1.0.0",
+  "description": "An Angular schematic that automatically scaffolds production-ready AWS ECS Fargate & RDS infrastructure for NestJS.",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "keywords": [
-    "schematics"
+    "nestjs",
+    "schematics",
+    "aws",
+    "fargate",
+    "ecs",
+    "deploy-stack",
+    "terraform",
+    "devsecops",
+    "infrastructure-as-code"
   ],
-  "author": "",
+  "author": "anton-codes-iac",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anton-codes-iac/nest-deploy-stack.git"
+  },
+  "homepage": "https://github.com/anton-codes-iac/nest-deploy-stack#readme",
+  "bugs": {
+    "url": "https://github.com/anton-codes-iac/nest-deploy-stack/issues"
+  },
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
