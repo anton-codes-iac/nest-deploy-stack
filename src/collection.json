@@ -1,0 +1,15 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "nest-deploy-stack": {
+      "description": "Scaffold production-grade AWS ECS Fargate & RDS infrastructure via deploy-stack",
+      "factory": "./nest-deploy-stack/index#nestDeployStack",
+      "schema": "./nest-deploy-stack/schema.json"
+    },
+    "ng-add": {
+      "description": "Alias for nest add nest-deploy-stack",
+      "factory": "./nest-deploy-stack/index#nestDeployStack",
+      "schema": "./nest-deploy-stack/schema.json"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "NestDeployStackSchema",
+    "title": "Nest Deploy Stack Schema",
+    "type": "object",
+    "properties": {
+        "aws_region": {
+            "type": "string",
+            "description": "AWS region for deployment",
+            "default": "us-east-1",
+            "x-prompt": {
+                "message": "Which AWS region do you want to deploy to?",
+                "type": "list",
+                "items": [
+                    {
+                        "value": "us-east-1",
+                        "label": "us-east-1 (N. Virginia)"
+                    },
+                    {
+                        "value": "us-east-2",
+                        "label": "us-east-2 (Ohio)"
+                    },
+                    {
+                        "value": "eu-west-1",
+                        "label": "eu-west-1 (Ireland)"
+                    },
+                    {
+                        "value": "eu-central-1",
+                        "label": "eu-central-1 (Frankfurt)"
+                    },
+                    {
+                        "value": "ap-southeast-2",
+                        "label": "ap-southeast-2 (Sydney)"
+                    }
+                ]
+            }
+        },
+        "include_managed_rds": {
+            "type": "boolean",
+            "description": "Include managed AWS RDS PostgreSQL database",
+            "default": false,
+            "x-prompt": {
+                "message": "Do you need a managed AWS RDS PostgreSQL database?",
+                "type": "confirmation"
+            }
+        },
+        "port": {
+            "type": "number",
+            "description": "Port the NestJS container exposes",
+            "default": 3000,
+            "x-prompt": "What port does your NestJS application listen on?"
+        }
+    },
+    "required": []
+}
